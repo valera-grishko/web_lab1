@@ -2,6 +2,7 @@
 
 ## Лабораторна робота №1
 ### Виконав: Гришко Валерій Валерійович КВ-21мп
+### https://docs.google.com/document/d/1_eionwfJ1eneCTh7EP2lZSWgcrYIkBNuPR0o50grXlM/edit
 
 
 ## Install requirements
