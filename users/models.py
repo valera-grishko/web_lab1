@@ -28,8 +28,8 @@ class CustomUser(AbstractUser):
 
     username = None
     email = models.EmailField(unique=True)
-    gender = models.CharField(max_length=10, choices=GENDER_CHOICES, blank=True, null=True)
-    birth_date = models.DateField(blank=True, null=True)
+    gender = models.CharField(max_length=10, choices=GENDER_CHOICES, blank=True, null=True, verbose_name='Стать')
+    birth_date = models.DateField(blank=True, null=True, verbose_name='Дата народження')
 
     objects = CustomUserManager()
 

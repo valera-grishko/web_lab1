@@ -18,7 +18,7 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = (
         ('Особиста інформація',
          {'fields': (
-             'email', 'first_name', 'gender', 'birth_date')}),
+             'email', 'first_name', 'gender', 'birth_date', 'password')}),
         ('Дозволи', {'fields': ('is_staff', 'is_active', 'is_superuser')}),
     )
     add_fieldsets = (

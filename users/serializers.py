@@ -7,7 +7,10 @@ User = get_user_model()
 class RegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('email', 'first_name', 'birth_date', 'gender')
+        fields = ('email', 'first_name', 'birth_date', 'gender', 'password')
+
+    def create(self, validated_data):
+        return User.objects.create_user(**validated_data)
 
 
 class ProfileSerializer(serializers.ModelSerializer):
